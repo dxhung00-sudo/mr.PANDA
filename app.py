@@ -4,7 +4,7 @@ import json
 
 # --- CẤU HÌNH API ---
 # Thầy dán API Key lấy từ Google AI Studio vào đây
-genai.configure(api_key="YOUR_API_KEY_HERE")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # --- HÀM GỌI AI SOẠN ĐỀ ---
